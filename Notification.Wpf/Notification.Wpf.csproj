@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0-windows;netcoreapp3.1-windows;net4.6-windows;net4.6.1-windows;net4.7-windows;net4.8-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <LangVersion>latest</LangVersion>
+    <Version>5.1.1.1</Version>
+    <Description>This project will help you take notification window like in windows</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/Platonenkov/Notification.Wpf</PackageProjectUrl>
+    <Copyright>https://github.com/Platonenkov</Copyright>
+    <Authors>Platonenkov</Authors>
+    <Company>https://github.com/Platonenkov</Company>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Platonenkov/Notification.Wpf</RepositoryUrl>
+    <PackageTags>Toast Notifications WPF</PackageTags>
+    <PackageReleaseNotes>fix operation timer reference</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Notifications.Wpf.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome5" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.31" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Files\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
